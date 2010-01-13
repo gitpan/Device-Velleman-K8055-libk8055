@@ -44,7 +44,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = ( @{ $EXPORT_TAGS{'all'} } ); 
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -78,7 +78,6 @@ XSLoader::load('Device::Velleman::K8055::libk8055', $VERSION);
 
 1;
 __END__
-# Below is stub documentation for your module. You'd better edit it!
 
 =head1 NAME
 
@@ -240,6 +239,10 @@ pulse counter. Debounce time value may vary between 0 and 5000.
 
 Linux k8055 library: http://libk8055.sourceforge.net/
 For more information on this board, visit http://www.velleman.be
+
+=head1 REPOSITORY
+
+Repository is available on GitHub: http://github.com/kost/libk8055-perl
 
 =head1 AUTHOR
 
